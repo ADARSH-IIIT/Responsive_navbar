@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+
+}
+
+
+.parent{
+
+
+    flex-direction: column-reverse;
+    height: 10vh;
+
+    width: 90vw;
+
+
+    background-color: rgb(5, 14, 26);
+
+    
+
+     overflow: hidden;    /* very imp  */
+
+   
+}
+
+
+
+
+
+
+body{
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    height: 100vh;
+
+    width: 100vw;
+    flex-direction: column;
+
+    background-color: rgb(19, 13, 13);
+}
+
+
+
+.c1{
+
+    height: 100%;
+    width: 100%;
+
+}
+
+
+
+.c2{
+
+
+
+    height: 100%;
+    width: 100%;
+
+
+    transform: translateY(   -20vh);
+    display: none;
+
+   
+
+}
+
+
+
+.up{
+
+    animation: up .3s ease-in 0s 1  ;
+    animation-fill-mode: forwards;
+
+    display: block;
+
+}
+
+
+
+.down{
+
+
+    animation: down .3s ease-in 0s 1  ;
+    animation-fill-mode: forwards;
+
+    display: block;
+
+}
+
+
+@keyframes up {
+
+    from{
+
+        transform: translateY(-10vh);
+
+    }
+
+    to{
+        transform: translateY(-20vh);
+
+        display: none;
+
+    }
+    
+}
+
+
+@keyframes down {
+
+    from{
+
+        transform: translateY(-20vh);
+
+
+    }
+
+    to{
+
+        transform: translateY(-10vh);
+        
+
+        display: block;
+
+        
+    }
+    
+}
